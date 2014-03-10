@@ -1,6 +1,6 @@
 {
   "name": "cabbie-persona",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Use cabbie to automate logging in with persona",
   "keywords": [],
   "dependencies": {},
