@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <button id="login">Login</button>
+    <button id="logout">Logout</button>
+    <div id="status">Logged Out</div>
+    <script src="https://login.persona.org/include.js"></script>
+    <script>
+      var statusTag = document.getElementById('status');
+      navigator.id.watch({
+        onlogin: function(assertion) {
+          statusTag.textContent = 'Logged In';
+        },
+        onlogout: function () {
+          statusTag.textContent = 'Logged Out';
+        }
+      });
+      document.getElementById('login').addEventListener('click', function () {
+        navigator.id.request({ siteName: 'Test Website' });
+      });
+      document.getElementById('logout').addEventListener('click', function () {
+        navigator.id.logout();
+      });
+    </script>
+  </body>
+</html>
