@@ -74,10 +74,10 @@ function testBrowser(getBrowser, promise) {
   }
   test('it lets you login with username and password', testCase(function (browser) {
     return persona(browser, 'jepso-test@mailinator.com', 'abc1234567');
-  }));
+  }), '2 minutes');
   test('it lets you login with mockmyid.com', testCase(function (browser) {
     return persona(browser, 'jepso-test@mockmyid.com');
-  }));
+  }), '2 minutes');
 }
 
 testBrowser(function () { return getBrowser({mode: 'sync', debug: true}) }, function (value) {
