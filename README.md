@@ -1,5 +1,7 @@
 # cabbie-persona
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ForbesLindesay/cabbie-persona.svg)](https://greenkeeper.io/)
+
 Use cabbie to automate logging in with persona
 
 [![Build Status](https://img.shields.io/travis/ForbesLindesay/cabbie-persona/master.svg)](https://travis-ci.org/ForbesLindesay/cabbie-persona)
